@@ -10,8 +10,8 @@ form = browser.get_form(id='login_form')
 
 
 
-form['email'].value = 'newfacker@gmail.com'
-form['pass'].value = 'from robobrowser import RoboBrowser'
+form['email'].value = 'emample@gmail.com'
+form['pass'].value = '*****************'
 
 browser.submit_form(form,submit=form['login'])
 
@@ -31,7 +31,7 @@ else:
     exit()
 
 
-time.sleep(2)
+time.sleep(5)
 
 next = browser.url
 
