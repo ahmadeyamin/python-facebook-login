@@ -4,7 +4,7 @@ from requests import Session
 
 session = Session()
 browser = RoboBrowser(history=True, user_agent='Safari 9.0',parser='html.parser',session=session)
-browser.open('https://m.facebook.com/login.php',)
+browser.open('https://mbasic.facebook.com/login.php',)
 
 form = browser.get_form(id='login_form')
 
@@ -31,7 +31,7 @@ else:
     exit()
 
 
-time.sleep(5)
+time.sleep(10)
 
 next = browser.url
 
